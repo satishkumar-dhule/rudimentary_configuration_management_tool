@@ -83,6 +83,6 @@ files:
 ![Screenshot](resources/idempotent.png)
 
 
-### Flow diagram
+### UML diagram
 
-![Screenshot](resources/flow-diagram.png)
+![Screenshot](resources/uml.png)
