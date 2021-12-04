@@ -1,0 +1,22 @@
+packages:
+  - name: php
+    action: add
+  - name: apache2
+    action: add
+    command: sudo a2dismod mpm_event;sudo a2enmod php7.4;sudo /etc/init.d/apache2 restart
+
+files:
+  - name: /var/www/html/index.html
+    type: file
+    action: delete
+  - name: /var/www/html/index.php
+    type: file
+    action: create
+    permission: 0644
+    group: root
+    owner: root
+    content: |
+      <?php
+      header("Content-Type: text/plain");
+      echo "Hello, world!\n";
+      ?>
