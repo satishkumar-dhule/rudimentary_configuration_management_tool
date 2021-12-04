@@ -70,14 +70,19 @@ files:
       echo "Hello, world!\n";
       ?>
 ```
-- Sample Run #1
+- Sample Run #1 : Creating resources from scratch
+
 ![Screenshot](resources/initial-run.png)
 
-- Sample Run #1
-![Screenshot](resources/initial-run.png)
+- Sample Run #2: Delete resources 
 
-- Sample Run #1
-![Screenshot](resources/initial-run.png)
+![Screenshot](resources/delete-resources.png)
 
-- Sample Run #1
-![Screenshot](resources/initial-run.png)
+- Sample Run #3: Showing idempotent nature of execution
+
+![Screenshot](resources/idempotent.png)
+
+
+### Flow diagram
+
+![Screenshot](resources/flow-diagram.png)
