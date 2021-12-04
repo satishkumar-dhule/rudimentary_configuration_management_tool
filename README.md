@@ -70,33 +70,14 @@ files:
       echo "Hello, world!\n";
       ?>
 ```
+- Sample Run #1
 ![Screenshot](resources/initial-run.png)
 
-- After successful setup you should see web and db tier running in Docker.
+- Sample Run #1
+![Screenshot](resources/initial-run.png)
 
-    ![Screenshot](docs/docker-stack.png)
+- Sample Run #1
+![Screenshot](resources/initial-run.png)
 
-- To bring up the system you can use below command.
-
-    ![Screenshot](docs/bringup.png)
-
-- To bring up the system in dettached mode you can use below command.
-
-    ![Screenshot](docs/bringup-dettached.png)
-
-- To bring down the system you can use below command.
-
-    ![Screenshot](docs/bringdown.png)
-
-
-### API Testing
-
-
-- Sample Pytest results.
-
-    ![Screenshot](docs/test.png)
-
-
-- API documentation is published on postman https://documenter.getpostman.com/view/UVC3jTGL?version=latest
-
-    ![Screenshot](docs/api-test.png)
+- Sample Run #1
+![Screenshot](resources/initial-run.png)
