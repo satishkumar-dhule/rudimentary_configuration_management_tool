@@ -234,36 +234,31 @@ class CoolPkg:
 
 
 if __name__ == "__main__":
-
-    c = LoaderClass()
-    data = c.load_input()
-
-
-#
+    data = LoaderClass().load_input()
     change_required = False
     for pkg in data['packages']:
-        p = CoolPkg(pkg)
-        p.plan()
-        if p.change_required:
+        package_record = CoolPkg(pkg)
+        package_record.plan()
+        if package_record.change_required:
             change_required = True
 
-    for file_record in data['files']:
-        f = CoolFile(file_record)
-        f.plan()
-        if f.change_required:
+    for f in data['files']:
+        file_record = CoolFile(f)
+        file_record.plan()
+        if file_record.change_required:
             change_required = True
 
     if change_required:
         print(f"Do you want to execute this plan: [Yes|No]\n")
-        response = input()
-        if response == "Yes":
+        user_response = input()
+        if user_response == "Yes":
             try:
                 for pkg in data['packages']:
-                    p = CoolPkg(pkg)
-                    p.apply()
-                for file_record in data['files']:
-                    f = CoolFile(file_record)
-                    f.apply()
+                    package_record = CoolPkg(pkg)
+                    package_record.apply()
+                for f in data['files']:
+                    file_record = CoolFile(f)
+                    file_record.apply()
             except Exception as e:
                 print(f"Exception occured for {f.fname}: {e}")
 
