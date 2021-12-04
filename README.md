@@ -1,1 +1,1 @@
-# rudimentary_configuration_management_tool
+# Rudimentary configuration management tool
